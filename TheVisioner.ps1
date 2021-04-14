@@ -58,7 +58,7 @@ Function SysInternals
 Function ArpSpoofDetect
 {
 	write-host "Observar la siguiente salida, y si dos equipos con distintas IP privadas tienen asociada una misma dirección MAC,"
-    write-host "es un indicio mas que claro de que un equipo esta suplantando a otro con su dirección MAC."
+    write-host "es un indicio mas que claro de que un equipo esta suplantando a otro con su direccion MAC."
 	cmd /c arp -a	
 }
 Function Connections
