@@ -13,4 +13,4 @@ NOTA IMPORTANTE: Es altamente recomendable que en inicio de Windows, se escriba 
 administrador , ya que algunas funcionalidades de este programa requieren de mayores privilegios. 
 Añadir que el script por consola se ejecuta del tipo --> .\TheVisioner.ps1  (en la ruta donde este ubicado dicho script).
 En caso de que no funcione la ejecucion del script sera debido a la politica, que estará por defecto en 
-modo restricted, con el siguiente comando se solucionará el error: Set-ExecutionPolicy Unrestricted , & teclear S.
+modo restricted, con el siguiente comando se solucionará el error: Set-ExecutionPolicy Unrestricted , y despues teclear S.
