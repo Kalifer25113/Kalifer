@@ -1,7 +1,7 @@
 #################################################################################
 # 			THE VISIONER						#
 # NOMBRE: *Fernando Salas Carrion*						#
-# GITHUB: *https://github.com/kalifer25113					#
+# GITHUB: *https://github.com/Kalifer25113					#
 # EMAIL:  *kalifer25113@protonmail.com*						#
 # Descripcion: Tool escrita en Powershell scripting para analisis forense y	#
 # informacion varia de sistemas Windows haciendo uso de				#
