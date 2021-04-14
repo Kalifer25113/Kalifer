@@ -32,11 +32,10 @@ Function Get-Menu
 	write-host "10.Ver recursos compartidos."
 	write-host "11.Ver actividad de red del equipo."
 	write-host "12.Encontrar archivos ocultos en la carpeta actual."
-	write-host "13.Encontrar todos los archivos y procesos ocultos del sistema."
-	write-host "14.Asignar ip estatica al equipo actual."
-	write-host "15.Ver procesos en ejecucion."
+	write-host "13.Asignar ip estatica al equipo actual."
+	write-host "14.Ver procesos en ejecucion."
 	
-    write-host "16.Salir"
+    write-host "15.Salir"
 	write-host "													Autor:Kalifer25113"
 	write-host "													Version: 1.0	  "
 }
@@ -98,14 +97,9 @@ Function NetViewInfo
 	write-host "opcion para ver actividad de red del sistema."
 	net view \\127.0.0.1
 }
-Function HiddenFiles 
+Function HiddenFiles
 {
-	write-host "Opcion para encontrar archivos y carpetas ocultos en el directorio en el cual se este ejecutando este programa."
-	dir /S /A:H
-}
-Function HiddenFilesAll
-{
-	write-host "Esta opcion mas avanzada mostrara todos los archivos y carpetas ocultos de todo el sistema."
+	write-host "Esta opcion mas avanzada mostrara todos los archivos y carpetas ocultos y no ocultos del directorio actual."
 	Get-ChildItem -force
 }
 Function StaticIP 
@@ -149,10 +143,9 @@ do
 		'10'{NetShareInfo}
 		'11'{NetViewInfo}
 		'12'{HiddenFiles}
-		'13'{HiddenFilesAll}
-		'14'{StaticIP}
-		'15'{GetProcess}
-        '16'{exit}
+		'13'{StaticIP}
+		'14'{GetProcess}
+        '15'{exit}
         Default {Write-Host "Opcion incorrecta"}
     }
     $intro = Read-Host "Pulse intro para continuar"
